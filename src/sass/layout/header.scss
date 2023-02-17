@@ -1,0 +1,37 @@
+.header {
+	position: absolute;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+	min-height: 107px;
+	
+	&-top {
+		min-height: 45px;
+		
+		&__widgets {
+			background-color: $bgColorThird;
+		}
+	}
+	
+	&-middle {
+		min-height: 62px;
+		
+		&__widgets {
+			background-color: $bgColor;
+		}
+	}
+	
+	&-bottom {
+		display: none;
+		min-height: 39px;
+		
+		&__widgets {
+			border-top: 1px solid #e8e8e8;
+			background-color: $bgColor;
+		}
+		
+		&.is-Show {
+			display: block;
+		}
+	}
+}
